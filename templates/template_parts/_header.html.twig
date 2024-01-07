@@ -1,17 +1,20 @@
-<header>
+ <header>
     <nav id="navH">
                 <ul>
                     <li>
-                        <button>Download SW</button>
+                        <button id="buttonDw">Download SW</button>
                     </li>
                     <li>
-                        <a href="#"></a>Guest
-                        <img src="images/guestIcon.svg" alt="">
+                        <a href="{{ path('login') }}">
+                        <img src="images/guestIcon.svg" alt=""><br>Guest
+                        </a>
                     </li>
                     <li>
-                        <button>Log In</button>
+                        <a href="{{ path('login') }}">
+                        <button id="buttonLog">Log In</button>
+                        </a>
                     </li>
                 </ul>
-           </nav>
+        </nav>
 
 </header>

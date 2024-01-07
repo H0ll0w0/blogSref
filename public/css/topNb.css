@@ -1,0 +1,56 @@
+header {
+    background-color: #070720;
+    padding-left: 80px;
+}
+
+#navH {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#navH ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navH li:nth-child(2) {
+    text-align: center;
+}
+
+#navH a {
+    font-size: 20px;
+    text-decoration: white;
+}
+
+#navH a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#navH button {
+    height: 35px;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
+
+#buttonDw {
+    background-color: #FF4E50;
+    width: 110px;
+    cursor: pointer;
+}
+
+#buttonLog {
+    background-color: #5B9279;
+    width: 80px;
+    cursor: pointer;
+}
+
+
+

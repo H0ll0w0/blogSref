@@ -8,79 +8,76 @@
     box-sizing: border-box;
 }
 
-:root {
+/* :root {
     --main-padding:80px;
-}
-
-body {
-    background-image: url(/public/images/accueilSymfony.jpg);
 }
 
 header {
     padding-left: var(--main-padding);
+} */
+    
+main {
+    padding-left: 80px;
 }
 
-main {
-    padding-left: var(--main-padding);
+
+body {
+    background-image: url(/public/images/accueilSymfony.jpg);
+    vscode-file://vscode-app/usr/share/code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html
 }
+
 
 #navV {
-    display: flex;
-    flex-direction: row;
     position: fixed;
-    left: 0;
     top: 0;
     bottom: 0;
     height: 100%;
-    width: 80px;
+    left: 0;
     background-color: #182C3A;
+    width: 80px;
     overflow: hidden;
     transition: width 0.2s linear;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* #sLogo {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    transition: all 05.s ease;
-    width: 125px;
-    height: 100px;
-} */
 
-.textIcons {
-    color: white;
 
+.logo span {
+    font-weight: bold;
+    padding-top: 55px;
+    font-size: 40px;
 }
 
-a{
+#navV a {
     position: relative;
+    color: white;
+    font-size: 25px;
     display: table;
-    width: 80px;
-    padding: 10px;
-    font-size: 30px;
+    width: 200px;
+    padding: 10px 10px 10px 5px;
+}
+
+#navV img {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
     text-align: center;
 }
-.nav-item{
+
+
+.nav-item {
     position: relative;
     top: 12px;
     margin-left: 10px;
 }
 
-a:hover{
-    
+#navV a:hover {
+    background: #244156;
 }
 
-nav:hover{
+#navV:hover {
     width: 200px;
     transition: all 0.5s ease;
-    
-}
-
-
-
-
-
-
-
-
+} 

@@ -23,23 +23,7 @@ class MainController extends AbstractController
         ]);
         
     }
-
-    // #[Route("/logIn", name: 'logIn')]
-    // public function logIn(): Response 
-    // {
-    //     return $this->render('main/logIn.html.twig', [
-    //     ]);
-        
-    // }
-
-    #[Route("/signUp", name: 'signUp')]
-    public function signUp(): Response 
-    {
-        return $this->render('main/signUp.html.twig', [
-        ]);
-        
-    }
-
+    
     #[Route("/guides", name: 'guides')]
     public function guides(): Response 
     {
@@ -51,10 +35,36 @@ class MainController extends AbstractController
         
     }
 
-    #[Route("/test", name: 'test')]
-    public function test(): Response
+    #[Route("/theoryCraft", name: 'theoryCraft')]
+    public function theoryCraft(): Response
     {
-        return $this->render('base.html.twig');
+        return $this->render('main/theoryCraft.html.twig');
+    }
+
+    #[Route("/skins", name: 'skins')]
+    public function skins(): Response
+    {
+        return $this->render('main/skins.html.twig');
+    }
+
+    #[Route("/codes", name: 'codes')]
+    public function codes(): Response
+    {
+        return $this->render('main/codes.html.twig');
+    }
+
+    #[Route("/signUp", name: 'signUp')]
+    public function signUp(): Response 
+    {
+        return $this->render('main/signUp.html.twig', [
+        ]);
+        
+    }
+
+    #[Route("/tierList", name: 'tierList')]
+    public function tierList(): Response
+    {
+        return $this->render('main/tierList.html.twig');
     }
 }
 
