@@ -53,14 +53,6 @@ class MainController extends AbstractController
         return $this->render('main/codes.html.twig');
     }
 
-    #[Route("/signUp", name: 'signUp')]
-    public function signUp(): Response 
-    {
-        return $this->render('main/signUp.html.twig', [
-        ]);
-        
-    }
-
     #[Route("/tierList", name: 'tierList')]
     public function tierList(): Response
     {

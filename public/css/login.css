@@ -1,0 +1,60 @@
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nova Square', sans-serif;
+}
+
+#loginForm div, p {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#loginForm p {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#loginForm h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#loginForm div {
+    margin-top: 20px;
+    width: 600px;
+    border-radius: 15px;
+    background-color: #070720;
+}
+
+#loginForm label {
+    padding: 10px;
+}
+
+#loginForm input {
+    width: 200px;
+    height: 25px;
+    padding: 3px;
+}
+
+.signInButton {
+    padding: 10px;
+    margin: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #5B9279;
+    color: white;
+    font-family: 'Nova Square', sans-serif;
+
+}
+
+#loginForm a:visited {
+    text-decoration: none;
+    color: #FF4E50;
+}
+

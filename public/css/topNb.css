@@ -1,3 +1,7 @@
+header * {
+    font-family: Karantina;
+}
+
 header {
     background-color: #070720;
     padding-left: 80px;
@@ -35,7 +39,7 @@ header {
     height: 35px;
     font-size: 25px;
     border-radius: 10px;
-    margin: 5px;
+    margin: 20px;
     padding: 5px;
     color: white;
 }

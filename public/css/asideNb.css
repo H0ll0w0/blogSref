@@ -3,7 +3,6 @@
     padding: 0;
     border: none;
     outline: none;
-    font-family: Karantina;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -16,16 +15,19 @@ header {
     padding-left: var(--main-padding);
 } */
     
+aside {
+    font-family: Karantina;
+}
+
 main {
     padding-left: 80px;
 }
 
-
 body {
-    background-image: url(/public/images/accueilSymfony.jpg);
-    vscode-file://vscode-app/usr/share/code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html
-}
+    background-color: #BECDDD;
+    font-family: 'Nova Square', sans-serif;
 
+}
 
 #navV {
     position: fixed;
@@ -40,11 +42,8 @@ body {
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 
-
-
-.logo span {
+#logo span {
     font-weight: bold;
-    padding-top: 55px;
     font-size: 40px;
 }
 
@@ -54,26 +53,27 @@ body {
     font-size: 25px;
     display: table;
     width: 200px;
-    padding: 10px 10px 10px 5px;
 }
 
 #navV img {
     position: relative;
     width: 70px;
     height: 40px;
-    top: 14px;
     font-size: 20px;
     text-align: center;
 }
 
+#logo img {
+    width: 70px;
+    height: 70px;
+}
 
 .nav-item {
     position: relative;
-    top: 12px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
-#navV a:hover {
+#navV li:not(:first-child):hover {
     background: #244156;
 }
 
@@ -81,3 +81,9 @@ body {
     width: 200px;
     transition: all 0.5s ease;
 } 
+
+#navV li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 5px;
+}
