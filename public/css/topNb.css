@@ -28,6 +28,7 @@ header {
 #navH a {
     font-size: 20px;
     text-decoration: white;
+    color: white;
 }
 
 #navH a:visited {
@@ -35,7 +36,7 @@ header {
     color: white;
 }
 
-#navH button {
+#navH button, #buttonLogin, #buttonLogout {
     height: 35px;
     font-size: 25px;
     border-radius: 10px;
@@ -50,11 +51,13 @@ header {
     cursor: pointer;
 }
 
-#buttonLog {
+#buttonLogin {
     background-color: #5B9279;
-    width: 80px;
+    width: 200px;
     cursor: pointer;
 }
 
-
-
+#buttonLogout {
+    background-color: #FF4E50;
+    cursor: pointer;
+}

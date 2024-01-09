@@ -1,0 +1,16 @@
+.registerButton {
+    padding: 10px;
+    margin: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #5B9279;
+    color: white;
+    font-family: 'Nova Square', sans-serif;
+    cursor: pointer;
+
+}
+
+#registerForm a:visited {
+    text-decoration: none;
+    color: #FF4E50;
+}
