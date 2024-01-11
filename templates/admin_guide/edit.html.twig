@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Guide{% endblock %}
+
+{% block body %}
+    <h1>Edit Guide</h1>
+
+    {{ include('admin_guide/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_admin_guide_index') }}">back to list</a>
+
+    {{ include('admin_guide/_delete_form.html.twig') }}
+{% endblock %}

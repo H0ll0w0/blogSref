@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Guide index{% endblock %}
+
+{% block body %}
+    <h1>Guide index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Content</th>
+                <th>PostedBy</th>
+                <th>CreatedAt</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for guide in guides %}
+            <tr>
+                <td>{{ guide.id }}</td>
+                <td>{{ guide.title }}</td>
+                <td>{{ guide.content }}</td>
+                <td>{{ guide.postedBy }}</td>
+                <td>{{ guide.createdAt ? guide.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('app_guide_show', {'id': guide.id}) }}">show</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

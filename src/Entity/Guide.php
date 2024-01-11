@@ -69,18 +69,6 @@ class Guide
         return $this;
     }
 
-    public function getPostedBy(): ?string
-    {
-        return $this->postedBy;
-    }
-
-    public function setPostedBy(string $postedBy): static
-    {
-        $this->postedBy = $postedBy;
-
-        return $this;
-    }
-
     public function getCreatedAt(): ?\DateTimeImmutable
     {
         return $this->createdAt;
@@ -133,5 +121,9 @@ class Guide
         }
 
         return $this;
+    }
+
+    public function __toString() {
+        return $this->title;
     }
 }

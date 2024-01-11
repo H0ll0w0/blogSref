@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Guide{% endblock %}
+
+{% block body %}
+    <h1>Guide</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ guide.id }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ guide.title }}</td>
+            </tr>
+            <tr>
+                <th>Content</th>
+                <td>{{ guide.content }}</td>
+            </tr>
+            <tr>
+                <th>PostedBy</th>
+                <td>{{ guide.postedBy }}</td>
+            </tr>
+            <tr>
+                <th>CreatedAt</th>
+                <td>{{ guide.createdAt ? guide.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <a href="{{ path('app_comment_new', {'id': guide.id}) }}">Ajouter un commentaire</a>
+    </div>
+
+    <a href="{{ path('app_guide_index') }}">back to list</a>
+{% endblock %}

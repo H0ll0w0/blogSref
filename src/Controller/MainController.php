@@ -12,7 +12,6 @@ class MainController extends AbstractController
     public function index(): Response
     {
         return $this->render('main/index.html.twig', [
-            'controller_name' => 'Miguel',
         ]);
     }
 
@@ -21,17 +20,6 @@ class MainController extends AbstractController
     {
         return $this->render('main/news.html.twig', [
         ]);
-        
-    }
-    
-    #[Route("/guides", name: 'guides')]
-    public function guides(): Response 
-    {
-        $guides = ["Ashura new monster", "F2P team for DB12", "How to choose which runes to keep"];
-
-        return $this->render('main/guides.html.twig', array(
-            'guides' => $guides
-        ));
         
     }
 
