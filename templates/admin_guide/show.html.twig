@@ -20,10 +20,6 @@
                 <td>{{ guide.content }}</td>
             </tr>
             <tr>
-                <th>PostedBy</th>
-                <td>{{ guide.postedBy }}</td>
-            </tr>
-            <tr>
                 <th>CreatedAt</th>
                 <td>{{ guide.createdAt ? guide.createdAt|date('Y-m-d H:i:s') : '' }}</td>
             </tr>
@@ -33,6 +29,8 @@
     <a href="{{ path('app_admin_guide_index') }}">back to list</a>
 
     <a href="{{ path('app_admin_guide_edit', {'id': guide.id}) }}">edit</a>
+
+    <a href="{{ path('app_admin_guide_delete', {'id': guide.id}) }}">delete</a>
 
     {{ include('admin_guide/_delete_form.html.twig') }}
 {% endblock %}

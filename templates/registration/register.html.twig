@@ -3,22 +3,26 @@
 {% block title %}Register{% endblock %}
 
 {% block body %}
+<form id="registerForm">
+    <div>
+        <h1 class="registerH1">Register</h1>
 
-    <h1 class="registerH1">Register</h1>
+        {{ form_errors(registrationForm) }}
 
-    {{ form_errors(registrationForm) }}
+        {{ form_start(registrationForm) }}
+            {{ form_row(registrationForm.email) }}
+            {{ form_row(registrationForm.plainPassword, {
+                label: 'Password'
+            }) }}
+            {{ form_row(registrationForm.agreeTerms) }}
 
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
+            <button type="submit" id="registerButton">Register</button>
+        {{ form_end(registrationForm) }}
 
-        <button type="submit" class="registerButton">Register</button>
-    {{ form_end(registrationForm) }}
+        <a href="{{path('login')}}">
+            <p>You already have an account ? <br> Click here to LogIn</p>
+        </a>
 
-    <a href="{{path('login')}}">
-        <p>You already have an account ? <br> Click here to LogIn</p>
-    </a>
+    </div>
+</form>
 {% endblock %}

@@ -7,10 +7,10 @@
 
     <table class="table">
         <tbody>
-            <tr>
+            {# <tr>
                 <th>Id</th>
                 <td>{{ guide.id }}</td>
-            </tr>
+            </tr> #}
             <tr>
                 <th>Title</th>
                 <td>{{ guide.title }}</td>
@@ -18,10 +18,6 @@
             <tr>
                 <th>Content</th>
                 <td>{{ guide.content }}</td>
-            </tr>
-            <tr>
-                <th>PostedBy</th>
-                <td>{{ guide.postedBy }}</td>
             </tr>
             <tr>
                 <th>CreatedAt</th>
@@ -35,4 +31,11 @@
     </div>
 
     <a href="{{ path('app_guide_index') }}">back to list</a>
+
+    <div>
+        {% for comment in comments %}
+            <div>{{ comment.user.email }} commented : </div>
+            <div>{{ comment.content }}</div>
+        {% endfor %}
+    </div>
 {% endblock %}

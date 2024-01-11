@@ -22,9 +22,6 @@ class Guide
     #[ORM\Column(type: Types::TEXT)]
     private ?string $content = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $postedBy = null;
-
     #[ORM\Column]
     private ?\DateTimeImmutable $createdAt = null;
 

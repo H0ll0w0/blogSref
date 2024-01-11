@@ -26,7 +26,7 @@ main {
 body {
     background-color: #BECDDD;
     font-family: 'Nova Square', sans-serif;
-
+    
 }
 
 #navV {
@@ -40,6 +40,7 @@ body {
     overflow: hidden;
     transition: width 0.2s linear;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    z-index: 5;
 }
 
 #logo span {

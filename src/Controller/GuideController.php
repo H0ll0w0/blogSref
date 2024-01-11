@@ -25,8 +25,10 @@ class GuideController extends AbstractController
     #[Route('/{id}', name: 'app_guide_show', methods: ['GET'])]
     public function show(Guide $guide): Response
     {
+        $comments = $guide->getComments();
         return $this->render('guide/show.html.twig', [
             'guide' => $guide,
+            'comments' => $comments
         ]);
     }
 }

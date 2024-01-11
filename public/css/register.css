@@ -1,4 +1,46 @@
-.registerButton {
+#registerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nova Square', sans-serif;
+}
+
+#registerForm div, p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#registerForm p {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#registerForm h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#registerForm div {
+    margin-top: 20px;
+    width: 600px;
+    border-radius: 15px;
+    background-color: #070720;
+}
+
+#registerForm label {
+    padding: 5px;
+}
+
+#registerForm input {
+    width: 200px;
+    height: 25px;
+    padding: 3px;
+}
+
+#registerButton {
     padding: 10px;
     margin: 15px;
     font-weight: bold;
