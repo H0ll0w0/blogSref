@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
+{% block title %}S'ref{% endblock %}
 
 {% block body %}
 <div id="indexSection">
@@ -16,4 +16,11 @@
     <h1>Latest News</h1>
 </div>
            
+{% for flash_message in app.flashes('success') %}
+    <script>
+        alert('{{ flash_message }}');
+    </script>
+{% endfor %}
+
 {% endblock %}
+

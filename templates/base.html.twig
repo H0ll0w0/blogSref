@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         <link href='https://fonts.googleapis.com/css?family=Karantina' rel='stylesheet'>
@@ -11,18 +12,22 @@
         <link rel="stylesheet" href="{{ asset('css/login.css') }}"> 
         <link rel="stylesheet" href="{{ asset('css/register.css') }}"> 
         <link rel="stylesheet" href="{{ asset('css/topNb.css') }}"> 
-        <link rel="stylesheet" href="{{ asset('css/indexLanding.css') }}"> 
+        <link rel="stylesheet" href="{{ asset('css/indexLanding.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/global.css') }}">
 
         {% endblock %}
 
-        {% block javascripts %}
-        {% endblock %}
     </head>
     <body>
         {{ include('/template_parts/_aside.html.twig') }}
         {{ include('/template_parts/_header.html.twig') }}
+        {{ include('/template_parts/_global.html.twig') }}
         <main>
         {% block body %}{% endblock %}
         </main>
     </body>
+        {% block javascripts %}
+        <script src="{{ asset('js/hamburger.js') }}"></script>
+        <script src="{{ asset('js/global.js') }}"></script>
+        {% endblock %}
 </html>

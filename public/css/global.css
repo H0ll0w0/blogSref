@@ -1,0 +1,18 @@
+.scrollTop {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    padding: 0px 7px;
+    font-size: 30px;
+    background-color: #070720;
+    color: white;
+    z-index: 8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.scrollTop:hover {
+    background-color: #222231;
+}

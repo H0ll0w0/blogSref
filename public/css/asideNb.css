@@ -88,3 +88,95 @@ body {
     align-items: center;
     padding: 10px 10px 10px 5px;
 }
+
+.hamburger {
+    position: fixed;
+    display: block;
+    width: 35px;
+    margin-top: 20px;
+    left: 20px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+
+    z-index: 7;
+
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    min-height: 120vh;
+    background-color: #182C3A;
+    padding-top: 100px;
+    z-index: 6;
+    transition: 0.4s;
+    font-size: 25px;
+}
+
+.mobile-nav.is-active {
+    right: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    width: 30%;
+    max-width: 200%;
+    margin: auto;
+    text-align: center;
+    padding: 12px 16px;
+
+    color: white;
+    text-decoration: none;
+}
+
+.mobile-nav a:hover {
+    background-color: #244156;
+}
+
+
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #navV {
+        display: none;
+    }
+    
+    main{
+        padding-left: 0;
+    }
+}
+
